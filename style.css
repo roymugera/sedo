@@ -1,95 +1,113 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
 }
 
-#wrapper {
+
+
+li, a, button {
     font-family: 'Mulish', sans-serif;
-    max-width: 100%;
-    overflow-x: hidden;
-    border: 1px solid blue;
+    font-weight: 500;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
 }
+
+
+
 
 header {
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10%;
+    background-color: rgb(0, 0, 0); 
+    height: 160px;
 }
 
-.container {
-    display: inline-flex;
-    justify-content: center;
-    width: 100%;
+.logo {
+    cursor: pointer;
+    width: 175px;
+    height: 160px;
 }
 
-.container a {
-    text-decoration: none;
+.nav_links {
+    list-style: none;
 }
 
-nav {
-    display:inline-flex;
-    justify-content: right;
-    height: 50px;
-    max-width: 90%;
-    margin-top: 50px;
-    margin-left: 90px;
+.nav_links li {
+    display: inline-block;
+    padding: 0px 50px;
 }
 
-nav a {
-    width: 60px;
-    height: 20px;
-    padding: 5px;
-    margin: 30px;
-    position: relative;
-    top: -20px;
-    text-align: center;
-    text-decoration: none;
-    color: white;
+.nav_links li a {
+    transition: all 0.3s ease 0s;
 }
 
-nav :hover {
-    color: grey;
+.nav_links li a:hover {
+    color: #0088a9;
 }
 
-#label {
-    width:200px;
-    height: 150px;
-    background-image: url('images/Sedo img/Logo-vid-wide.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    text-decoration: none;
+.btn {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
+#mobile_menu {
+    visibility: hidden;
+    display: none;
 }
 
 
-/*
+
+
+
+
 #hero {
-    background-image: url('images/Sedo img/Hero image 1.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-color: rgb(255, 255, 255);
-    height: 600px;
+    padding: 30px;
+    height: 820px;
+    /* border: 1px solid red; */
 }
 
+#hero img {
+    border-radius: 50%;
+    width:580px;
+    height:580px;
+    position: relative;
+    left: 150px;
+    top: 20px;
+    box-shadow: 10px 3px 10px rgba(0, 0, 0, 0.2);
+}
 
 #cta {
     background-color: rgba(0, 0, 0, 0.9);
-    width:350px;
-    height:230px;
+    width:600px;
+    height:570px;
     padding:60px;
     color: rgb(255, 255, 255);
     position: relative;
-    top:250px;
+    top:200px;
+    right: 80px;
     float: right;
-    border-top-left-radius: 10%;
-    
+    border-radius: 50%;
+    box-shadow: 10px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
 #cta-content {
     padding: 20px;
     line-height: 30px;
+    position: relative;
+    top: 120px;
+    text-align: center;
 }
 
 h1 {
@@ -97,33 +115,39 @@ h1 {
     padding-bottom: 20px;
 }
 
-*/
-
-.maintenance img{
+#main_btn {
     position: relative;
-    left: 31%;
-    width: 500px;
-    height: 500px;
+    top: -25px;
 }
+
+
 
 
 #about {
     background-color: rgb(255, 255, 255);
-    padding: 60px;
-    padding-left: 180px;
-    padding-bottom: 60px;
-    height: 350px;
-}
-
-.line {
-    background-color: black;
-    width: 10px;
-    height: 230px;
+    padding: 200px 350px 0px 350px;
+    
 }
 
 .intro {
     display: inline-flex;
-    height: 250px;
+    position: relative;
+    top: -150px;
+    /* border: 1px solid red; */
+}
+
+.intro img {
+    width: 450px;
+    height: 450px;
+    box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.line {
+    background: black;
+    width: 10px;
+    height: 220px;
+    position: relative;
+    top: 20px;
 }
 
 .intro h2 {
@@ -136,89 +160,25 @@ h1 {
 .intro p{
     position: relative;
     top:80px;
-    left: -2px;
     height: 150px;
 }
 
 
-footer {
-    width: 100%;
-    font-size: 15px;
-}
 
-#footer-up {
-    padding: 50px;
-    width: 100%;
-    display: inline-flex;
-    justify-content: space-evenly; 
-}
 
-#footer-up img {
-    margin-top: -50px;
-    width: 300px;
-    height: 300px;
-}
-
-.footer-headings {
-    font-size: 22px;
-    margin-bottom: 10px;
-    text-decoration: underline;
-}
-
-#footer-up li {
-    list-style-type: none;
-    padding: 10px;
-    font-weight: bolder;
-}
-
-#footer-up a {
-    text-decoration: none;
-    color: black;
-}
-
-#footer-mid {
-    background-color: black;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-#footer-mid a {
-    color: white;
-    text-decoration: none;
-    padding: 0px 50px;
-}
-
-#footer-bottom {
-    border-top: 0.1px solid white;
-    padding: 30px;
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
-    text-align: center;
-    font-weight: bold;
-}
 
 
 #services {
     height: 900px;
     background-color: black;
     color: white;
+    
 }
 
 #services h2  {
     text-align: center;
     padding-top: 100px;
     padding-bottom: 90px;
-}
-
-#services p  {
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    position: relative;
-    top: 80px;
 }
 
 .carousel{
@@ -256,15 +216,16 @@ footer {
 .carousel_track {
     margin: 5px;
     height: 450px;
-    width: 330px;
+    width: 329px;
 }
 
 .carousel_image_one{
     background-image: url("images/Sedo img/img one.png");
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
-    border: 1px solid white;
+    cursor: pointer;
+    border: 2px solid rgb(8, 8, 8);
 }
 
 .carousel_image_two {
@@ -272,7 +233,8 @@ footer {
     background-size: cover;
     background-position: 30% 70%;
     background-repeat: no-repeat;
-    border: 1px solid white;
+    cursor: pointer;
+    border: 2px solid rgb(8, 8, 8);
 }
 
 .carousel_image_three {
@@ -280,7 +242,8 @@ footer {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border: 1px solid white;
+    cursor: pointer;
+    border: 2px solid rgb(8, 8, 8);
 }
 
 .carousel_cta {
@@ -288,8 +251,16 @@ footer {
     padding: 20px 0px;
     text-align: center;
     position: relative;
-    top: 386px;
-    border-bottom: 1px solid white;
+    top: 392px;
+    width: 325.6px;
+    height: 55px;
+    cursor: pointer;
+    border: 1px solid rgb(8, 8, 8);
+}
+
+.cta_info {
+    position: relative;
+    top: -6px;
 }
 
 .carousel_cta img {
@@ -306,7 +277,7 @@ footer {
      padding: 20px 0;
  }
 
- .carousel_indicator {
+.carousel_indicator {
     border: 0;
     border-radius: 50%;
     width: 10px;
@@ -319,9 +290,22 @@ footer {
     background: rgba(89, 189, 106, 0.829);
 }
 
-.view-more {
-    color: white;
+#services p  {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    top: 80px;
 }
+
+#services p a {
+    color: white;
+    text-decoration: underline;
+}
+
+
+
+
 
 #testimonials {
     padding: 120px;
@@ -331,40 +315,124 @@ footer {
 }
 
 #booknow {
-    padding: 200px;
-    background: black;
+    padding: 100px;
     color: white;
-    text-align: center;
-    background-image: url('images/Sedo img/Hero image 1.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 0.5);
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.fa-bars {
-    visibility: hidden;
-    display: none;
+.booknow-content {
+    line-height: 30px;
+    padding: 20px;
 }
+
+.second-btn {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.booknow-content h2 {
+    margin-bottom: 30px;
+}
+
+.booknow-content p {
+    font-size: 16px;
+}
+
+.book_img {
+    box-shadow: 10px 8px 2px rgba(184, 181, 181, 0.2);
+}
+
+
+
+
+footer {
+    width: 100%;
+}
+
+#footer-top {
+    padding: 50px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-evenly; 
+}
+
+#footer-top img {
+    margin-top: -50px;
+    width: 300px;
+    height: 300px;
+}
+
+.footer-headings {
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+#footer-top li {
+    list-style-type: none;
+    padding: 10px;
+    color: black;
+}
+
+#footer-top a {
+    text-decoration: none;
+    color: black;
+}
+
+#footer-mid {
+    background-color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#footer-mid a {
+    color: white;
+    text-decoration: none;
+    padding: 0px 50px;
+}
+
+#footer-mid a:hover {
+    color: #0088a9;
+}
+
+#footer-bottom {
+    border-top: 0.1px solid white;
+    padding: 30px;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    font-weight: bold;
+}
+
+#footer-bottom a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
 
 
 @media screen and (max-width:425px){
-    
-    #label {
-        width: 150px;
-        height: 80px;
-        margin: 0;
-        position: absolute;
-        top: 20px;
-        left: 10px;
-    }
-    
-    nav  {
-       visibility: hidden;
-      
+
+    header, main, footer {
+        overflow: hidden;
     }
 
-    header {
-        height: 120px;
+    .nav_links  {
+       visibility: hidden;
+    }
+
+    #mobile_menu {
+        visibility: visible;
+        display: flex;
     }
 
     .fa-bars {
@@ -372,27 +440,54 @@ footer {
         visibility: visible;
         position: absolute;
         left: 375px;
-        top: 44px;
-    }
-
-    .maintenance img {
-        position: relative;
-        left: -10px;
-        width: 470px;
-        height: 500px;
-    }
-   
-    main {
-        z-index: 10;
+        top: 58px;
     }
     
-    #about, #services, #footer-up, h1  {
-        visibility: visible;
-        display: block;
+    #hero img {
+        border-radius: 50%;
+        width:420px;
+        height:420px;
+        position: relative;
+        left: -70px;
+        top: 10px;
+        box-shadow: 10px 3px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    #cta {
+        background-color: rgba(0, 0, 0, 0.9);
+        width:420px;
+        height:420px;
+        padding:60px;
+        color: rgb(255, 255, 255);
+        position: relative;
+        top:-80px;
+        right: -100px;
+        float: right;
+        border-radius: 50%;
+        box-shadow: 10px 3px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    #cta-content {
+        padding: 20px;
+        line-height: 30px;
+        position: relative;
+        top: 30px;
+        text-align: center;
+    }
+    
+    h1 {
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+    
+    #main_btn {
+        position: relative;
+        top: -30px;
     }
 
     #about {
         padding: 20px;
+        padding-top: 200px;
     }
  
     .line {
@@ -412,84 +507,180 @@ footer {
         position: relative;
         left: -20px;
         top: 80px;
-        font-size: 15px;
+        font-size: 14px;
     }
 
     #services {
-        margin-top: 150px;
+        margin-top: 100px;
     }
-   
+
+    .carousel_track {
+        margin: 30px;
+    }
+
+    .carousel_button--right {
+        right: -15px;
+    }
     
-    #footer-bottom {
+    .carousel_button--left {
+        left: -15px;
+    }
+
+    #services h2  {
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+    
+    #services {
+        height: 850px;
+    }
+    
+    #testimonials {
+        padding: 80px;
+    }
+
+    #booknow {
+        padding: 50px;
+        display: block;
         text-align: center;
-        border-top: 1px solid rgb(0, 0, 0);
+        height: 350px;
+        
+    }
+    
+    .second-btn {
+        margin-top: 30px;
+        width: 250px;
+    }
+    
+    .book_img {
+        visibility: hidden;
+    }
+     
+    #footer-top {
+        padding: 50px;
         width: 100%;
-        position: relative;
-        top: 50px;
+        display: grid;
+        height: 900px;
+    }
+    
+    .footer-headings {
+        font-size: 18px;
+    }
+    
+    #footer-mid {
+        visibility: hidden;
+    }
+     
+    #footer-bottom {
+        padding: 30px;
+        background-color: rgb(0, 0, 0);
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    #footer-bottom a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
     }
     
 }
 
-@media screen and (max-width: 375px) {
-
+@media screen and (max-width:375px) {
     .fa-bars {
-        left: 330px;
-        top: 44px;
+        position: absolute;
+        left: 330px; 
+    }  
+}
+
+@media screen and (max-width:320px){
+
+    .logo {
+        width: 150px;
+        height: 150px;
+        position: relative;
+        left: -30px;
+    }
+    
+    .fa-bars {
+        position: absolute;
+        left: 280px; 
     }
 
-    .maintenance img {
+    #hero img {
+        width:350px;
+        height:350px;
         position: relative;
-        left: -10px;
-        width: 400px;
-        height: 400px;
+        left: -70px;
+        top: 10px;
     }
-   
-   
+    
+    #cta {
+        width:350px;
+        height:350px;
+    }
+    
+    #cta-content {
+        position: relative;
+        top: 0px;
+        text-align: left;
+    }
+    
+    h1 {
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+
+    #cta-content p {
+        font-size: 12px;
+
+    }
+    
+    #main_btn {
+        position: relative;
+        top: -40px;
+        font-size: 12px;
+        width: 155px;
+    }
+
+    #about {
+        padding-top: 100px;
+        padding-bottom: 80px;
+    }
+  
     .intro h2 {
         position: relative;
-        left: 130px;
+        left: 100px;
         top: 20px;
         height:30px;
         text-align: center;
     }
     
-    .intro p{
-        position: relative;
-        left: -20px;
-        top: 80px;
+    .intro p{  
+        font-size: 13px;
+    }
+
+    #testimonials {
+        padding: 70px;
+    }
+
+    #booknow {
+        padding: 10px;
+        padding-top: 60px;
+        height: 380px;  
+    }
+    
+    #booknow p {
         font-size: 14px;
     }
 
-}
-
-@media screen and (max-width: 320px) {
-
-    .fa-bars {
-        left: 280px;
-        top: 44px;
-    }
-
-    .maintenance img {
-        position: relative;
-        left: 20px;
-        width: 300px;
-        height: 300px;
-    }
-   
-   
-    .intro h2 {
-        position: relative;
-        left: 110px;
-        top: 0px;
-        height:30px;
-        text-align: center;
+    .second-btn {
+        margin-top: 30px;
+        width: 200px;
+        font-size: 14px;
     }
     
-    .intro p{
-        position: relative;
-        left: -20px;
-        top: 70px;
-        font-size: 13px;
+    .book_img {
+        visibility: hidden;
     }
 
 }
