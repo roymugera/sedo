@@ -442,6 +442,8 @@ footer {
         left: 375px;
         top: 58px;
     }
+
+   
     
     #hero img {
         border-radius: 50%;
@@ -721,6 +723,11 @@ footer {
 
 }
 
+
+
+
+/*
+
 @media screen and (max-width:2560px) {
 
     header {
@@ -737,7 +744,6 @@ footer {
         padding: 30px;
         padding-top: 80px;
         height: 980px;
-        /* border: 1px solid red; */
     }
     
     #hero img {
@@ -775,5 +781,4 @@ footer {
 
 }
 
-
-/* landscape */
+*/
