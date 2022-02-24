@@ -28,9 +28,22 @@
                         <li><a href="#services">Services</a></li>
                         <li><a href="#" target="_blank">Book</a></li>
                     </ul>
-                    <div id="mobile_menu">
-                        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-                    </div>
+                    <div id="mobile_nav">
+                        <div id="hamburger_menu" onclick="menuOpen()">
+                            <a href="#">
+                                <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                            </a>
+                        </div>         
+                        <div id="side_menu" onclick="menuClose()">
+                            <a href="#">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </a>
+                            <a href="inex.html">Home</a>
+                            <a href="#about">About</a>
+                            <a href="#services">Services</a>
+                            <a href="#booknow">Book</a>
+                        </div>
+                    </div>    
                 </nav> 
             </div> 
         </div>     
@@ -105,7 +118,6 @@
                 <button class="carousel_button carousel_button-right">
                     <img src="images/Sedo img/bx_bxs-right-arrow.svg" alt="">
                 </button>
-                <!---
                 <div class="carousel_nav">
                     <button class="carousel_indicator current-slide"></button>
                     <button class="carousel_indicator"></button>
@@ -115,7 +127,6 @@
             </div>
             <p><a href="#">View More Services</a></p>
         </div>
-    -->
     </section>
     <section id="testimonials">
         <div class="container">

@@ -1,12 +1,8 @@
 function menuOpen () {
-    document.getElementById("side-menu").style.width = '290px';
+    document.getElementById("side_menu").style.width = '290px';
+    document.getElementById("hamburger_menu").style.visibility = 'hidden';
 }
 function menuClose () {
-    document.getElementById("side-menu").style.width = '0';
+    document.getElementById("side_menu").style.width = '0';
 };
 
-
-// When clicking on the side
-function sideView() {
-    document.getElementById("side-menu").style.width = '0';
-};
