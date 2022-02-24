@@ -557,7 +557,9 @@ footer #footer-mid {
 
   #services .carousel_indicator {
     
-    margin: 0 2px;
+    margin: 0 5px;
+    width: 5px;
+    height: 5px;
   }
 
 
