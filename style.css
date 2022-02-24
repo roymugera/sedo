@@ -323,7 +323,7 @@ header #mobile_nav {
 #services .carousel_indicator {
   border: 0;
   border-radius: 50%;
-  width: 10px;
+  max-width: 10px;
   height: 10px;
   background: white;
   margin: 0 5px;
