@@ -8,5 +8,5 @@ function menuClose () {
 
 function sideView () {
     document.getElementById("side_menu").style.visibility = 'hidden';
-};
 
+}
