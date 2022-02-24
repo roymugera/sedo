@@ -328,7 +328,7 @@ header #mobile_menu {
 #services .carousel_indicator {
   border: 0;
   border-radius: 50%;
-  max-width: 10px;
+  width: 10px;
   height: 10px;
   background: white;
   margin: 0 5px;
@@ -555,11 +555,17 @@ footer #footer-mid {
     height: 500px;
   }
 
+  #services .carousel_indicator {
+    
+    margin: 0 10px;
+  }
+
 
   /* Book Now */
   
   #booknow {
     padding: 60px;
+    padding-top: 100px;
     height: 40vh;
   }
  
@@ -639,7 +645,7 @@ footer #footer-mid {
   /* Book Now */
 
   #booknow {
-    padding: 30px;
+    
     height: 40vh;
   }
 
@@ -655,9 +661,7 @@ footer #footer-mid {
 
 @media (max-width:425px) {
 
-  #showcase {
-    height: 70vh;
-  }
+  
 
 
   #about {
@@ -675,6 +679,7 @@ footer #footer-mid {
 
   #booknow {
     padding: 20px;
+    padding-top: 60px;
     height: 45vh;
   }
 
