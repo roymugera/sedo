@@ -1223,18 +1223,18 @@ footer #footer-mid {
   header #mobile_nav {
     visibility: visible;
     display: grid;
-    margin-top: -78px;
+    margin-top: -110px;
   }
 
   header #branding img {
-    width: 190px;
-    height: 190px;
+    width: 130px;
+    height: 130px;
   }
 
   header .fa-bars {
     color: rgb(255, 255, 255);
     visibility: visible;
-    font-size: larger;
+    font-size: 22px;
   }
 
   header .fa-times {
@@ -1273,9 +1273,10 @@ footer #footer-mid {
 
   #showcase {
     padding: 0;
-    height: 80vh;
+    height: 100vh;
   }
 
+ 
   #showcase .cta_content {
     position: relative;
     top: 36px;
@@ -1286,15 +1287,15 @@ footer #footer-mid {
   }
 
   #showcase .main_container img {
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 320px;
+    max-height: 320px;
   }
 
   #showcase .cta_circle {
     position: relative;
     top: 250px;
-    min-width: 310px;
-    max-height: 310px;
+    min-width: 300px;
+    max-height: 305px;
   }
   
   #showcase .btn {
@@ -1387,7 +1388,7 @@ footer #footer-mid {
     padding: 15px 30px;
     font-size: 12px;
     margin: 20px auto;
-    display: block;
+    width: 300px;
   }
 
   footer #footer-top li,
