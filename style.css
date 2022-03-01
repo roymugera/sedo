@@ -1242,7 +1242,7 @@ footer #footer-mid {
 		position: relative;
 		float: right;
     right: 139px;
-		font-size: 25px;		
+		font-size: 30px;		
 	}
 
   header #side_menu {
@@ -1274,7 +1274,7 @@ footer #footer-mid {
 
   #showcase {
     padding: 0;
-    height: 100vh;
+    height: 110vh;
   }
  
   #showcase .cta_content {
