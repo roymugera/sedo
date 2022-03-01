@@ -8,124 +8,246 @@
     <meta name="keywords" content="Chesterfield barber, mobile barber near me, turkish barbers near me"> <!--SEO-->
     <meta name="author" content="RM Web Studio">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <title>Sedo | Mobile Barber</title>
 </head>
 <body>
     <header>
         <div class="container">
-            <div id="navbox">
-                <div id="branding">
-                    <img src="images/Sedo img/3DCC6A68-E3FA-4115-A745-EE7CBAC6779D.PNG" alt="logo">
-                </div>
-                <nav>
-                    <ul id="mobile_ul">
-                        <li class="current"><a href="index.html">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#" target="_blank">Book</a></li>
-                    </ul>
-                    <div id="mobile_nav">
-                        <div id="hamburger_menu" onclick="menuOpen()">
-                            <a href="#">
-                                <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-                            </a>
-                        </div>         
-                        <div id="side_menu" onclick="menuClose()">
-                            <a href="#">
-                                <i class="fa fa-times" aria-hidden="true"></i>
-                            </a>
-                            <a href="inex.html">Home</a>
-                            <a href="#about">About</a>
-                            <a href="#services">Services</a>
-                            <a href="#booknow">Book</a>
-                        </div>
-                    </div>    
-                </nav> 
-            </div> 
+            <div id="branding">
+                <img src="images/Sedo img/3DCC6A68-E3FA-4115-A745-EE7CBAC6779D.PNG" alt="logo">
+            </div>
+            <nav>
+                <ul id="mobile_ul">
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#" target="_blank">Book</a></li>
+                </ul>
+                <div id="mobile_nav">
+                    <div id="hamburger_menu" onclick="menuOpen()">
+                        <a href="#">
+                            <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </div>         
+                    <div id="side_menu" onclick="menuClose()">
+                        <a href="#">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </a>
+                        <a href="inex.html">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#services">Services</a>
+                        <a href="#booknow">Book</a>
+                    </div>
+                </div>    
+            </nav> 
         </div>     
-    </header> 
-    <section id="showcase">  
-        <div class="container">
-            <img src="images/Sedo img/3A91C961-3401-45BF-9024-5069AFBC2CAB.PNG">
-        </div>  
-       <!---  
+    </header>
+     <section id="showcase">
         <div class="main_container">
             <div class="main_container_img">
-                <img src="images\Sedo img\Hero image 1.png">
+                <img src="images/Sedo img/Hero image 1.png">
             </div>
             <div class="cta_circle">
                 <div class="cta_content">
-                    <h1>Hey, I'm Sedo</h1>
-                    <p>Professional Mobile Barber and Hairdresser based in the UK. Whatever the hairstyle I've got you covered, <br>Monday to Saturday from 8am to 8pm. <br><br></p>
-                    <button class="btn">Book Available Slot</button>
+                    <h1>Hey, I'm Sedo07</h1>
+                    <p>Professional Mobile Barber and Hairdresser based in Chesterfield. Whatever the hairstyle I've got you covered, Monday to Saturday from 8am to 8pm. <br><br></p>
+                    <button class="btn">Learn More</button>
                 </div>  
             </div>
         </div> 
-    -->
     </section>
     <section id="about">
         <div class="container">
             <div class="intro_box">
                 <div class="line"></div>
-                <h2>About</h2>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pretium id neque aliquam maximus. In consectetur purus vitae tempor fermentum. 
-                    Suspendisse mattis libero et leo lobortis, vitae sodales erat facilisis. Sed bibendum felis sit amet volutpat rutrum. Vivamus fringilla risus enim, quis hendrerit augue interdum non. 
-                    Morbi orci augue, mollis in fermentum vel, tempor non nibh. Duis sit amet lacus ullamcorper, lobortis odio vitae, tincidunt dui. Duis ligula mauris, 
-                    efficitur eu imperdiet nec, gravida dapibus libero. 
-                    Nullam dictum ut eros at imperdiet. Sed consectetur nunc luctus metus sodales vehicula. 
-                    Suspendisse ac massa porta, scelerisque nibh nec, elementum neque.
-                </p>
+                <div class="intro_content">
+                    <h2>About</h2>
+                    <p> Born and raised in Turkey with 20 years industry experience, utilising traditional Turkish barbery techniques
+                        to boost confidence in my community within Chesterfield and surrounding areas. 
+                        I can cater to all hair types, textures and specialise in skinfades, 
+                        please check the services section to have a sense of what I can offer at your convenience.   
+                    </p>
+                </div>
+                
             </div>
         </div>
     </section>
-    <section id="services">
+    <!---
+    <section id="services">   
         <div>
             <h2> Services</h2>
-            <div class="carousel">
-                <button class="carousel_button carousel_button-left">
-                    <img src="images/Sedo img/bx_bxs-left-arrow.svg" alt="">
-                </button>
-                <div class="carousel_tracker-container">
-                    <div class="carousel_track carousel_image_one">
-                        <div class="carousel_cta">
-                            <div class="cta_info">
-                                <span>Kids Haircut</span>
-                                <img src="images/Sedo img/ep_arrow-up.svg" class="arrow_up">
-                            </div> 
-                        </div>
-                    </div>
-                    <div class="carousel_track carousel_image_two">
-                        <div class="carousel_cta">
-                            <div class="cta_info">
-                                <span>Men's Haircut</span>
-                                <img src="images/Sedo img/ep_arrow-up.svg">
-                            </div>   
-                        </div>
-                    </div>
-                    <div class="carousel_track carousel_image_three">
-                        <div class="carousel_cta">
-                            <div class="cta_info">
-                                <span>Ladies Haircut</span>
-                                <img src="images/Sedo img/ep_arrow-up.svg">
+            <div class="swiper mySwiper container">  
+                <div class="swiper-wrapper content">
+                    <div class="swiper-slide">
+                        <div class="carousel_track carousel_image_one">
+                            <div class="carousel_cta">
+                                <div class="cta_info">
+                                    <span>Kids Haircut</span>
+                                    <img src="images/Sedo img/arrow-up.svg" class="arrow_up" onclick="arrowUp()">
+                                </div>
+                                <div id="shadowBox" class="shadow_box">
+                                    <div class="shadow_box_logo" onclick="arrowDown()"></div>
+                                    <div id="content0" class="shadow_box_content">
+                                        <span>Heading Goes Here</span>
+                                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ligula neque, feugiat at massa eget, 
+                                            bibendum imperdiet justo. Phasellus blandit, turpis ut sagittis ornare, lectus ipsum pharetra enim, 
+                                            eget efficitur nibh turpis ut tortor.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>    
                         </div>
                     </div>
-                </div>
-                <button class="carousel_button carousel_button-right">
-                    <img src="images/Sedo img/bx_bxs-right-arrow.svg" alt="">
-                </button>
-                <div class="carousel_nav">
-                    <button class="carousel_indicator current-slide"></button>
-                    <button class="carousel_indicator"></button>
-                    <button class="carousel_indicator"></button>
-                </div>
-        
+                    <div class="swiper-slide">
+                        <div class="carousel_track carousel_image_two">
+                            <div class="carousel_cta">
+                                <div class="cta_info">
+                                    <span>Men's Haircut</span>
+                                    <img src="images/Sedo img/arrow-up.svg" onclick="arrowUp1()">
+                                </div>
+                                <div id="shadowBox1" class="shadow_box">
+                                    <div class="shadow_box_logo" onclick="arrowDown1()"></div>
+                                    <div id="content1" class="shadow_box_content">
+                                        <span>Heading Goes Here</span>
+                                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ligula neque, feugiat at massa eget, 
+                                            bibendum imperdiet justo. Phasellus blandit, turpis ut sagittis ornare, lectus ipsum pharetra enim, 
+                                            eget efficitur nibh turpis ut tortor.
+                                        </p>
+                                    </div>
+                                </div>   
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="carousel_track carousel_image_three">
+                            <div class="carousel_cta">
+                                <div class="cta_info">
+                                    <span>Ladies Haircut</span>
+                                    <img src="images/Sedo img/arrow-up.svg" onclick="arrowUp2()">
+                                </div>
+                                <div id="shadowBox2" class="shadow_box">
+                                    <div class="shadow_box_logo" onclick="arrowDown2()"></div>
+                                    <div id="content2" class="shadow_box_content">
+                                        <span>Heading Goes Here</span>
+                                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ligula neque, feugiat at massa eget, 
+                                            bibendum imperdiet justo. Phasellus blandit, turpis ut sagittis ornare, lectus ipsum pharetra enim, 
+                                            eget efficitur nibh turpis ut tortor.
+                                        </p>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="carousel_track carousel_image_four">
+                            <div class="carousel_cta">
+                                <div class="cta_info">
+                                    <span>Beard Trim</span>
+                                    <img src="images/Sedo img/arrow-up.svg" onclick="arrowUp3()">
+                                </div>
+                                <div id="shadowBox3" class="shadow_box">
+                                    <div class="shadow_box_logo" onclick="arrowDown3()"></div>
+                                    <div id="content3" class="shadow_box_content">
+                                        <span>Heading Goes Here</span>
+                                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ligula neque, feugiat at massa eget, 
+                                            bibendum imperdiet justo. Phasellus blandit, turpis ut sagittis ornare, lectus ipsum pharetra enim, 
+                                            eget efficitur nibh turpis ut tortor.
+                                        </p>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="carousel_track carousel_image_five">
+                            <div class="carousel_cta">
+                                <div class="cta_info">
+                                    <span>Low Fade</span>
+                                    <img src="images/Sedo img/arrow-up.svg" onclick="arrowUp4()">
+                                </div>
+                                <div id="shadowBox4" class="shadow_box">
+                                    <div class="shadow_box_logo" onclick="arrowDown4()"></div>
+                                    <div id="content4" class="shadow_box_content">
+                                        <span>Heading Goes Here</span>
+                                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ligula neque, feugiat at massa eget, 
+                                            bibendum imperdiet justo. Phasellus blandit, turpis ut sagittis ornare, lectus ipsum pharetra enim, 
+                                            eget efficitur nibh turpis ut tortor.
+                                        </p>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="carousel_track carousel_image_six">
+                            <div class="carousel_cta">
+                                <div class="cta_info">
+                                    <span>Facial Treatment</span>
+                                    <img src="images/Sedo img/arrow-up.svg" onclick="arrowUp5()">
+                                </div>
+                                <div id="shadowBox5" class="shadow_box">
+                                    <div class="shadow_box_logo" onclick="arrowDown5()"></div>
+                                    <div id="content5" class="shadow_box_content">
+                                        <span>Heading Goes Here</span>
+                                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ligula neque, feugiat at massa eget, 
+                                            bibendum imperdiet justo. Phasellus blandit, turpis ut sagittis ornare, lectus ipsum pharetra enim, 
+                                            eget efficitur nibh turpis ut tortor.
+                                        </p>
+                                    </div>
+                                </div>   
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="carousel_track carousel_image_seven">
+                            <div class="carousel_cta">
+                                <div class="cta_info">
+                                    <span>Skin Fade</span>
+                                    <img src="images/Sedo img/arrow-up.svg" onclick="arrowUp6()">
+                                </div>
+                                <div id="shadowBox6" class="shadow_box">
+                                    <div class="shadow_box_logo" onclick="arrowDown6()"></div>
+                                    <div id="content6" class="shadow_box_content">
+                                        <span>Heading Goes Here</span>
+                                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ligula neque, feugiat at massa eget, 
+                                            bibendum imperdiet justo. Phasellus blandit, turpis ut sagittis ornare, lectus ipsum pharetra enim, 
+                                            eget efficitur nibh turpis ut tortor.
+                                        </p>
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="carousel_track carousel_image_eight">
+                            <div class="carousel_cta">
+                                <div class="cta_info">
+                                    <span>Mid Fade</span>
+                                    <img src="images/Sedo img/arrow-up.svg" onclick="arrowUp7()">
+                                </div>
+                                <div id="shadowBox7" class="shadow_box">
+                                    <div class="shadow_box_logo" onclick="arrowDown7()"></div>
+                                    <div id="content7" class="shadow_box_content">
+                                        <span>Heading Goes Here</span>
+                                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ligula neque, feugiat at massa eget, 
+                                            bibendum imperdiet justo. Phasellus blandit, turpis ut sagittis ornare, lectus ipsum pharetra enim, 
+                                            eget efficitur nibh turpis ut tortor.
+                                        </p>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>   
+                    </div>
+                </div>  
             </div>
-            <p><a href="#">View More Services</a></p>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <p><a href="#">View full List of services</a></p> 
         </div>
     </section>
     <section id="testimonials">
@@ -133,14 +255,16 @@
             <p>Testimonials coming soon</p>
         </div>
     </section>
+--->
     <section id="booknow">
         <div class="container">
             <div class="content">
                 <h2>My Availability</h2>
-                <p>Monday to Saturday from 8 am to 8 pm. <br>Whatever your hairstyle, I've got you covered, at your 
-                convenience. 
+                <p>Glad you stopped by and had a chance to look around. Bookings can be made in the comfort of your own home, 
+                    workplace or hotel, Available every Monday to Saturday from 8am to 8pm.
                 </p>
-                <button class="second-btn">Book Available Slot</button>
+                <button class="second-btn">Make an Enquiry</button>
+                <button class="third-btn">Book Available slot</button>
             </div>
             <div>
                 <img src="images/Sedo img/Hero image 1.png">
@@ -175,19 +299,29 @@
                 </ul>
             </div>
         </div>
-        <!---
-        <div id="footer-mid">
-            <a href="index.html" class="current">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#">Book</a>
-        </div> 
-    -->
         <div id="footer-bottom">
             <p>&copy 2022 SedoO7 LTD |<a href="#"> Designed by RM Web Studio</a></p>   
         </div>
     </footer>
     <script src="script.js"></script>
-    <script src="https://use.fontawesome.com/4fe03aa688.js"></script> 
+    <script src="https://use.fontawesome.com/4fe03aa688.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            },
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 </body>
 </html>
