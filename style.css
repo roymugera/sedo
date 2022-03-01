@@ -566,6 +566,7 @@ footer #footer-mid {
 
 
 
+/** Responsive Design: Portrait Mode **/
 @media (max-width:1921px) and (min-width:1025px){
 
     header a {
@@ -1223,18 +1224,18 @@ footer #footer-mid {
   header #mobile_nav {
     visibility: visible;
     display: grid;
-    margin-top: -110px;
+    margin-top: -90px;
   }
 
   header #branding img {
-    width: 130px;
-    height: 130px;
+    width: 170px;
+    height: 170px;
   }
 
   header .fa-bars {
     color: rgb(255, 255, 255);
     visibility: visible;
-    font-size: 22px;
+    font-size: 25px;
   }
 
   header .fa-times {
@@ -1275,11 +1276,10 @@ footer #footer-mid {
     padding: 0;
     height: 100vh;
   }
-
  
   #showcase .cta_content {
     position: relative;
-    top: 36px;
+    top: 45px;
   }
 
   #showcase .cta_content h1 {
@@ -1287,24 +1287,26 @@ footer #footer-mid {
   }
 
   #showcase .main_container img {
-    max-width: 320px;
-    max-height: 320px;
+    max-width: 350px;
+    max-height: 350px;
   }
 
   #showcase .cta_circle {
     position: relative;
     top: 250px;
-    min-width: 300px;
-    max-height: 305px;
+    right: 120px;
+    min-width: 350px;
+    max-height: 350px;
   }
   
   #showcase .btn {
-    padding: 10px 40px;
-    font-size: 14px;
+    padding: 10px 50px;
+    font-size: 12px;
   }
 
   #showcase p {
-    font-size: 12px;
+    font-size: 14px;
+    line-height: 1.7;
   }
 
   #about {
@@ -1327,7 +1329,7 @@ footer #footer-mid {
   }
 
   #about p {
-    font-size: 12px;
+    font-size: 15px;
   }
 
   #services .carousel_cta {
@@ -1409,4 +1411,17 @@ footer #footer-mid {
     height: 300px;
   }
 
+}
+
+/** Responsive Design: Landscape Mode Design **/
+@media (max-width: 667px) {
+  #showcase {
+    height: 200vh;
+  }
+
+  header #side_menu {
+		height: 80vh;
+		padding-top: 80px;
+	}
+  
 }
