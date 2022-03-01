@@ -1,3 +1,4 @@
+
 body {
   font-family: 'Mulish', sans-serif;
   font-size: 15px;
@@ -6,7 +7,6 @@ body {
   margin: 0; 
   /* Shortcut: font:15px/1.5 'Mulish', sans-serif */
 }
-
 
 /** Global **/
 .container {
@@ -30,7 +30,6 @@ header .current a {
   color: #0088a9;
   font-weight: bold;
 }
-
 
 /** Header **/
 header {
@@ -194,12 +193,16 @@ header #mobile_nav {
 
 #services {
   position: relative;
-  min-height: 100vh;
-  background: black;
+  min-height: 80vh;
+  background: rgba(0, 0, 0, 0.89);
   color: white;
   margin: 100px auto;
-  padding: 100px;
+  padding: 20px;
   overflow: hidden;
+}
+
+#services .container {
+  padding-bottom: 100px;
 }
 
 #services h2 {
@@ -209,152 +212,20 @@ header #mobile_nav {
   padding-bottom: 70px;
 }
 
-#services .swiper {
+.swiper {
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  overflow: hidden;
+  list-style: none;
+}
+
+.swiper-slide img {
+  display: block;
   width: 100%;
-  margin: 0 auto;
-}
-
-#services .swiper-slide {
-  text-align: center;
-  font-size: 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-}
-
-#services .carousel_track {
-  margin: 20px auto;
   height: 800px;
-  width: 650px;
-  position: relative;
-}
-
-#services .carousel_image_one {
-  background-image: url("images/Sedo img/slide -1.png");
-  background-size: cover;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  border: 2px solid #080808;
-}
-
-#services .carousel_image_two {
-  background-image: url("images/Sedo img/slide -2.png");
-  background-size: cover;
-  background-position: 30% 70%;
-  background-repeat: no-repeat;
-  border: 2px solid #080808;
-}
-
-#services .carousel_image_three {
-  background-image: url("images/Sedo img/slide -3.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border: 2px solid #080808;
-}
-
-#services .carousel_image_four {
-  background-image: url("images/Sedo img/slide -4.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border: 2px solid #080808;
-}
-
-#services .carousel_image_five {
-  background-image: url("images/Sedo img/slide -5.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border: 2px solid #080808;
-}
-
-#services .carousel_image_six {
-  background-image: url("images/Sedo img/slide -6.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border: 2px solid #080808;
-}
-
-#services .carousel_image_seven {
-  background-image: url("images/Sedo img/slide -7.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border: 2px solid #080808;
-}
-
-#services .carousel_image_eight {
-  background-image: url("images/Sedo img/slide -8.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border: 2px solid #080808;
-}
-
-#services .carousel_cta {
-  background-color: black;
-  padding: 40px 0px;
-  text-align: center;
-  position: relative;
-  top: 681px;
-  width: 100%;
-  border: 1px solid rgb(31, 30, 30);
-}
-
-#services .cta_info {
-  width: 95%;
-}
-
-#services .carousel_cta img {
-  position: relative;
-  top: 1px;
-  float: right;
-  width: 35px;
-  height: 35px;
-  cursor: pointer;
-}
-
-#services .swiper-button-next, 
-#services .swiper-button-prev {
-  color: #fff;
-}
-
-#services .swiper-button-next {
-  margin-right:50px;
-}
-
-#services .swiper-button-prev {
-  margin-left:50px;
-}
-
-.swiper-pagination {
-  position: absolute;
-  top: 780px;
-  width: auto;
-  height: 20px;
-  text-align: center;
-  transition: .3s opacity;
-  transform: translate3d(0,0,0);
-  z-index: 100;
-}
-
-.swiper-pagination-bullet {
-  width: 8px;
-  height: 8px;
-  display: inline-block;
-  border-radius: 50%;
+  object-fit: contain;
 }
 
 #services p {
@@ -362,66 +233,14 @@ header #mobile_nav {
   padding-top: 20px;
   padding-bottom: 20px;
   position: relative;
-  top: 8px;
-  font-size: 25px;
+  top: 50px;
 }
 
 #services p a {
   color: white;
   text-decoration: underline;
-  font-size: 25px;
+  font-size: 30px;
 }
-
-.shadow_box {
-  background: rgba(184, 128, 8, 0.932);
-  width:100%;
-  height: 0;
-  position: absolute;
-  left: -1px;
-  bottom:0;
-  transition: 0.3s ease-in;
-  -webkit-transition: 0.3s ease-in;
-  z-index: 100;
-  visibility: hidden;
-}
-
-.shadow_box_logo {
-  position: relative;
-  right: 10px;
-  top: 20px;
-  float: right;
-  width: 25px;
-  height: 25px;
-  background-image: url('images/Sedo img/arrow-down.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  cursor: pointer;
-  transition: 0.1s ease-out;
-  -webkit-transition: 0.1s ease-out;
-}
-
-.shadow_box_content {
-  width: 100%;
-  height: 100%;
-}
-
-.shadow_box_content span {
-  margin-top: 90px;
-  font-size: 23px;
-  text-decoration: underline;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.shadow_box_content p {
-  margin-top: 30px;
-  font-size: 25px;
-  width: 100%;
-  text-align: left;
-}
- 
 
 /** Testimonials **/
 
@@ -651,65 +470,19 @@ footer #footer-mid {
     }
 
     #services h2 {
-      font-size: 30px;
+      font-size: 25px;
     }
-
-    #services .carousel_track {
+    
+    .swiper-slide img {
+      display: block;
+      width: 100%;
       height: 500px;
-      width: 450px;
+      object-fit: contain;
     }
-
-    #services .carousel_cta {
-      padding: 30px 0px;
-      position: relative;
-      top: 420px;
-      width: 100%;
-    }
-
-    #services .cta_info {
-      width: 95%;
-      font-size: 16px;
-    }
-
-    #services .carousel_cta img {
-      position: relative;
-      top: 0px;
-      float: right;
-      width: 30px;
-      height: 30px;
-    }
-
+    
     #services p a {
-      font-size: 16px;
+      font-size: 18px;
     }
-
-    .shadow_box_content span {
-      margin-top: 80px;
-      font-size: 30px;
-    }
-
-    .shadow_box_content p {
-      margin-top: 30px;
-      font-size: 14px;
-      width: 100%;
-      text-align: left;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     #testimonials {
       padding: 100px;
@@ -787,6 +560,7 @@ footer #footer-mid {
     visibility: visible;
     display: grid;
     margin-top: -78px;
+    z-index: 100;
   }
 
   header #branding img {
@@ -900,43 +674,21 @@ footer #footer-mid {
     top: 0;
     font-size: 16px;
   }
-    
-  #services h2 {
-    font-size: 30px;
-  }
-
-  #services .carousel_track {
-    margin: 20px 5px;
-    height: 600px;
-    min-width: 800px;
-    position: relative;
-  }
-
   
-  #services .carousel_cta {
-    padding: 30px 0px;
-    position: relative;
-    top: 420px;
+  #services h2 {
+    font-size: 22px;
+  }
+  
+  .swiper-slide img {
+    display: block;
     width: 100%;
+    height: 400px;
+    object-fit: contain;
   }
-
-  #services .cta_info {
-    width: 95%;
-    font-size: 16px;
-  }
-
-  #services .carousel_cta img {
-    position: relative;
-    top: 0px;
-    float: right;
-    width: 30px;
-    height: 30px;
-  }
-
+  
   #services p a {
     font-size: 16px;
   }
-
 
 
   #testimonials {
@@ -1115,57 +867,22 @@ footer #footer-mid {
     font-size: 15px;
   }
 
- 
-
-  #services {
-    margin: 0;
-    padding: 0;
+  #services h2 {
+    font-size: 22px;
   }
-
-  #services .swiper {
-    width: auto;
-  }
-
-  #services .swiper-slide {
-    font-size: 15px;
-  }
-
-  #services .carousel_track {
-    height: 250px;
-    width: 250px;
-  }
-
-
-  #services .carousel_cta {
-    padding: 10px 0px;
-    position: relative;
-    top: 250px;
-    width: 250px;
-    height: 18px;
-  }
-
-  #services .carousel_cta img {
-    position: relative;
-    left: 40px;
-    top: 5px;
-    cursor: pointer;
-  }
-
-  .shadow_box {
-    background: rgba(184, 128, 8, 0.932);
-    width: 250px;
-  }
-
-
-  .shadow_box_content span {
-    margin-top: 150px;
   
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+  }
+  
+  #services p a {
+    font-size: 16px;
   }
 
-  .shadow_box_content p {
-    margin-top: 20px;
-  }
-
+  
   #testimonials {
     padding: 50px;
     font-size: 20px;
@@ -1209,6 +926,10 @@ footer #footer-mid {
 
   footer #footer-top{ 
     display: grid;
+  }
+  
+  footer #footer-top li {
+    padding: 5px 50px;
   }
 
 }
@@ -1332,30 +1053,21 @@ footer #footer-mid {
     font-size: 15px;
   }
 
-  #services .carousel_cta {
-    padding: 30px 0px;
-    position: relative;
-    top: 420px;
+  #services h2 {
+    font-size: 22px;
+  }
+  
+  .swiper-slide img {
+    display: block;
     width: 100%;
-    border: 1px solid red;
+    height: 400px;
+    object-fit: contain;
   }
-
-  #services .cta_info {
-    width: 95%;
-    font-size: 16px;
-  }
-
-  #services .carousel_cta img {
-    position: relative;
-    top: 0px;
-    float: right;
-    width: 30px;
-    height: 30px;
-  }
-
+  
   #services p a {
     font-size: 16px;
   }
+
 
   #testimonials {
     padding: 50px;
@@ -1413,6 +1125,8 @@ footer #footer-mid {
 
 }
 
+
+
 /** Responsive Design: Landscape Mode Design **/
 @media (max-height: 375px) {
   #showcase {
@@ -1425,3 +1139,166 @@ footer #footer-mid {
 	}
   
 }
+
+
+/** 
+
+#services .carousel_track {
+  margin: 20px auto;
+  height: 800px;
+  width: 650px;
+  position: relative;
+}
+
+#services .carousel_image_one {
+  background-image: url("images/Sedo img/slide -1.png");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  border: 2px solid #080808;
+}
+
+#services .carousel_image_two {
+  background-image: url("images/Sedo img/slide -2.png");
+  background-size: cover;
+  background-position: 30% 70%;
+  background-repeat: no-repeat;
+  border: 2px solid #080808;
+}
+
+#services .carousel_image_three {
+  background-image: url("images/Sedo img/slide -3.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid #080808;
+}
+
+#services .carousel_image_four {
+  background-image: url("images/Sedo img/slide -4.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid #080808;
+}
+
+#services .carousel_image_five {
+  background-image: url("images/Sedo img/slide -5.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid #080808;
+}
+
+#services .carousel_image_six {
+  background-image: url("images/Sedo img/slide -6.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid #080808;
+}
+
+#services .carousel_image_seven {
+  background-image: url("images/Sedo img/slide -7.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid #080808;
+}
+
+#services .carousel_image_eight {
+  background-image: url("images/Sedo img/slide -8.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid #080808;
+}
+
+#services .carousel_cta {
+  background-color: black;
+  padding: 40px 0px;
+  text-align: center;
+  position: relative;
+  top: 681px;
+  width: 100%;
+  border: 1px solid rgb(31, 30, 30);
+}
+
+#services .cta_info {
+  width: 95%;
+}
+
+#services .carousel_cta img {
+  position: relative;
+  top: 1px;
+  float: right;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+#services .swiper-button-next, 
+#services .swiper-button-prev {
+  color: #fff;
+}
+
+#services .swiper-button-next {
+  margin-right:50px;
+}
+
+#services .swiper-button-prev {
+  margin-left:50px;
+}
+
+.shadow_box {
+  background: rgba(184, 128, 8, 0.932);
+  width:100%;
+  height: 0;
+  position: absolute;
+  left: -1px;
+  bottom:0;
+  transition: 0.3s ease-in;
+  -webkit-transition: 0.3s ease-in;
+  z-index: 100;
+  visibility: hidden;
+}
+
+.shadow_box_logo {
+  position: relative;
+  right: 10px;
+  top: 20px;
+  float: right;
+  width: 25px;
+  height: 25px;
+  background-image: url('images/Sedo img/arrow-down.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  transition: 0.1s ease-out;
+  -webkit-transition: 0.1s ease-out;
+}
+
+.shadow_box_content {
+  width: 100%;
+  height: 100%;
+}
+
+.shadow_box_content span {
+  margin-top: 90px;
+  font-size: 23px;
+  text-decoration: underline;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shadow_box_content p {
+  margin-top: 30px;
+  font-size: 25px;
+  width: 100%;
+  text-align: left;
+}
+
+
+**/
