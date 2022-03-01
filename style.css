@@ -1414,7 +1414,7 @@ footer #footer-mid {
 }
 
 /** Responsive Design: Landscape Mode Design **/
-@media (max-width: 667px) {
+@media (max-height: 375px) {
   #showcase {
     height: 200vh;
   }
