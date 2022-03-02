@@ -431,7 +431,7 @@ footer #footer-mid {
     }
 
     #showcase p {
-      font-size: 18px;
+      font-size: 15px;
       width: auto;
     }
 
@@ -454,7 +454,7 @@ footer #footer-mid {
     }
 
     #about {
-      margin-top: 50px;
+      margin-top: 20px;
     }
 
     #about .line {
@@ -560,8 +560,35 @@ footer #footer-mid {
     visibility: visible;
     display: grid;
     margin-top: -78px;
-    z-index: 100;
   }
+  
+  header #side_menu {
+		background-color: rgb(0, 0, 0);
+		height: 100vh;
+		width: 0;
+		position: fixed;
+		right: 0;
+		top: 0;
+		z-index: 2;
+		opacity: 1;
+		overflow-x: hidden;
+		padding-top: 80px;
+		transition: 0.5s;
+		-webkit-transition: 0.5s;
+	}
+
+  header #side_menu a {
+		padding: 25px 20px;
+		text-decoration: none;
+		font-size: 17px;
+		color: #ccc;
+		display: block;
+		position: relative;
+		top: 30px;
+		left: 80px;
+		transition: 0.3s;
+	}
+
 
   header #branding img {
     width: 185px;
@@ -572,13 +599,15 @@ footer #footer-mid {
     color: rgb(255, 255, 255);
     visibility: visible;
     font-size: larger;
+    z-index: 100;
   }
 
   header .fa-times {
 		position: relative;
-		float: right;
-    right: 139px;
-		font-size: 25px;		
+    right: 160px;
+    top: -60px;
+    float: right;
+		font-size: 25px;
 	}
 
   header #side_menu {
@@ -610,7 +639,7 @@ footer #footer-mid {
 
   #showcase {
     padding: 0;
-    height: 90vh;
+    height: 100vh;
   }
 
   #showcase .main_container {
@@ -766,6 +795,33 @@ footer #footer-mid {
     margin-top: -78px;
   }
 
+  header #side_menu {
+		background-color: rgb(0, 0, 0);
+		height: 100vh;
+		width: 0;
+		position: fixed;
+		right: 0;
+		top: 0;
+		z-index: 2;
+		opacity: 1;
+		overflow-x: hidden;
+		padding-top: 80px;
+		transition: 0.5s;
+		-webkit-transition: 0.5s;
+	}
+
+  header #side_menu a {
+		padding: 25px 20px;
+		text-decoration: none;
+		font-size: 17px;
+		color: #ccc;
+		display: block;
+		position: relative;
+		top: 30px;
+		left: 80px;
+		transition: 0.3s;
+	}
+
   header #branding img {
     width: 190px;
     height: 190px;
@@ -779,10 +835,12 @@ footer #footer-mid {
 
   header .fa-times {
 		position: relative;
-		float: right;
-    right: 139px;
-		font-size: 25px;		
+    right: 160px;
+    top: -60px;
+    float: right;
+		font-size: 25px;
 	}
+
 
   header #side_menu {
 		background-color: rgb(0, 0, 0);
@@ -932,6 +990,11 @@ footer #footer-mid {
     padding: 5px 50px;
   }
 
+  footer #footer-top img {
+    width: 300px;
+    height: 350px;
+  }
+
 }
 
 @media (max-width: 475px) and (min-width:320px) {
@@ -948,6 +1011,33 @@ footer #footer-mid {
     margin-top: -90px;
   }
 
+  header #side_menu {
+		background-color: rgb(0, 0, 0);
+		height: 100vh;
+		width: 0;
+		position: fixed;
+		right: 0;
+		top: 0;
+		z-index: 2;
+		opacity: 1;
+		overflow-x: hidden;
+		padding-top: 80px;
+		transition: 0.5s;
+		-webkit-transition: 0.5s;
+	}
+
+  header #side_menu a {
+		padding: 25px 20px;
+		text-decoration: none;
+		font-size: 17px;
+		color: #ccc;
+		display: block;
+		position: relative;
+		top: 30px;
+		left: 80px;
+		transition: 0.3s;
+	}
+
   header #branding img {
     width: 170px;
     height: 170px;
@@ -961,9 +1051,10 @@ footer #footer-mid {
 
   header .fa-times {
 		position: relative;
-		float: right;
-    right: 139px;
-		font-size: 30px;		
+    right: 160px;
+    top: -60px;
+    float: right;
+		font-size: 25px;
 	}
 
   header #side_menu {
@@ -1000,7 +1091,7 @@ footer #footer-mid {
  
   #showcase .cta_content {
     position: relative;
-    top: 45px;
+    top: 35px;
   }
 
   #showcase .cta_content h1 {
@@ -1015,9 +1106,9 @@ footer #footer-mid {
   #showcase .cta_circle {
     position: relative;
     top: 250px;
-    right: 120px;
-    min-width: 350px;
-    max-height: 350px;
+    right: 128px;
+    min-width: 335px;
+    max-height: 335px;
   }
   
   #showcase .btn {
@@ -1026,12 +1117,12 @@ footer #footer-mid {
   }
 
   #showcase p {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.7;
   }
 
   #about {
-    margin-top: 50px;
+    margin-top: 20px;
     padding-bottom: 100px;
   }
  
@@ -1046,11 +1137,11 @@ footer #footer-mid {
   }
 
   #about h2 {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   #about p {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   #services h2 {
@@ -1128,6 +1219,13 @@ footer #footer-mid {
 
 
 /** Responsive Design: Landscape Mode Design **/
+
+@media (max-height:688px) {
+  #showcase {
+    height: 150vh;
+  }
+}
+
 @media (max-height: 375px) {
   #showcase {
     height: 200vh;
@@ -1140,165 +1238,8 @@ footer #footer-mid {
   
 }
 
-
-/** 
-
-#services .carousel_track {
-  margin: 20px auto;
-  height: 800px;
-  width: 650px;
-  position: relative;
+@media (max-height:320px) {
+  #showcase {
+    height: 300vh;
+  }
 }
-
-#services .carousel_image_one {
-  background-image: url("images/Sedo img/slide -1.png");
-  background-size: cover;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  border: 2px solid #080808;
-}
-
-#services .carousel_image_two {
-  background-image: url("images/Sedo img/slide -2.png");
-  background-size: cover;
-  background-position: 30% 70%;
-  background-repeat: no-repeat;
-  border: 2px solid #080808;
-}
-
-#services .carousel_image_three {
-  background-image: url("images/Sedo img/slide -3.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border: 2px solid #080808;
-}
-
-#services .carousel_image_four {
-  background-image: url("images/Sedo img/slide -4.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border: 2px solid #080808;
-}
-
-#services .carousel_image_five {
-  background-image: url("images/Sedo img/slide -5.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border: 2px solid #080808;
-}
-
-#services .carousel_image_six {
-  background-image: url("images/Sedo img/slide -6.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border: 2px solid #080808;
-}
-
-#services .carousel_image_seven {
-  background-image: url("images/Sedo img/slide -7.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border: 2px solid #080808;
-}
-
-#services .carousel_image_eight {
-  background-image: url("images/Sedo img/slide -8.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border: 2px solid #080808;
-}
-
-#services .carousel_cta {
-  background-color: black;
-  padding: 40px 0px;
-  text-align: center;
-  position: relative;
-  top: 681px;
-  width: 100%;
-  border: 1px solid rgb(31, 30, 30);
-}
-
-#services .cta_info {
-  width: 95%;
-}
-
-#services .carousel_cta img {
-  position: relative;
-  top: 1px;
-  float: right;
-  width: 35px;
-  height: 35px;
-  cursor: pointer;
-}
-
-#services .swiper-button-next, 
-#services .swiper-button-prev {
-  color: #fff;
-}
-
-#services .swiper-button-next {
-  margin-right:50px;
-}
-
-#services .swiper-button-prev {
-  margin-left:50px;
-}
-
-.shadow_box {
-  background: rgba(184, 128, 8, 0.932);
-  width:100%;
-  height: 0;
-  position: absolute;
-  left: -1px;
-  bottom:0;
-  transition: 0.3s ease-in;
-  -webkit-transition: 0.3s ease-in;
-  z-index: 100;
-  visibility: hidden;
-}
-
-.shadow_box_logo {
-  position: relative;
-  right: 10px;
-  top: 20px;
-  float: right;
-  width: 25px;
-  height: 25px;
-  background-image: url('images/Sedo img/arrow-down.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  cursor: pointer;
-  transition: 0.1s ease-out;
-  -webkit-transition: 0.1s ease-out;
-}
-
-.shadow_box_content {
-  width: 100%;
-  height: 100%;
-}
-
-.shadow_box_content span {
-  margin-top: 90px;
-  font-size: 23px;
-  text-decoration: underline;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.shadow_box_content p {
-  margin-top: 30px;
-  font-size: 25px;
-  width: 100%;
-  text-align: left;
-}
-
-
-**/

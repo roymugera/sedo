@@ -6,7 +6,7 @@ function menuClose () {
     document.getElementById("side_menu").style.width = '0';
 };
 
-
+/** 
 function arrowUp () {
     document.getElementById('shadowBox').style.height = 'auto';
     document.getElementById('shadowBox').style.visibility = 'visible';
@@ -122,8 +122,4 @@ function arrowDown7 () {
     document.getElementById('content7').style.visibility = 'hidden';
 }
 
-
-// body 
-function mainPage() {
-    document.body.style.transition = '0.2s';
-}
+**/
