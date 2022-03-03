@@ -31,6 +31,11 @@ header .current a {
   font-weight: bold;
 }
 
+a {
+  color: #fff;
+  text-decoration: none!important;
+}
+
 /** Header **/
 header {
   background: #000;
@@ -77,7 +82,7 @@ header #mobile_nav {
 
 #showcase {
   padding: 100px;
-  height: 70vh;
+  height: 82vh;
 }
 
 #showcase .main_container {
@@ -95,7 +100,7 @@ header #mobile_nav {
   height: 700px;
   position: relative;
   left: 100px;
-  box-shadow: 10px 3px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
 #showcase .cta_circle {
@@ -107,7 +112,7 @@ header #mobile_nav {
   right: 100px;
   top: 300px;
   border-radius: 50%;
-  box-shadow: 10px 3px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
 #showcase .cta_content {
@@ -125,7 +130,7 @@ header #mobile_nav {
 }
 
 #showcase p {
-  font-size: 25px;
+  font-size: 24px;
   width: auto;
 }
 
@@ -148,10 +153,9 @@ header #mobile_nav {
 }
 
 
-
 /** About **/
 #about {
-  margin-top: 200px;
+  margin-top: 150px;
   padding-bottom: 200px;
 }
 
@@ -183,7 +187,7 @@ header #mobile_nav {
 }
 
 #about p {
-  font-size: 25px;
+  font-size: 24px;
   width: auto;
   height: 100%;
 }
@@ -192,24 +196,71 @@ header #mobile_nav {
 /** Services **/
 
 #services {
+  padding: 50px;
+  padding-bottom: 150px;
+  background: rgb(0, 0, 0);
+}
+
+#services h2 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 50px;
+}
+
+.services_circle_container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 80px;
+}
+
+.services_circle {
+  border-radius: 50%;
+  border: 2px solid white;
+  max-width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  background: #0088a9;
+}
+
+#services p {
+  color: white;
+  font-size: 23px;
+  text-align: center;
+  width: auto;
+}
+
+.services_link {
+  color: rgb(255, 255, 255);
+  text-decoration: underline!important;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+
+/** Gallery **/
+
+#gallery {
   position: relative;
   min-height: 80vh;
-  background: rgba(0, 0, 0, 0.89);
+  background: rgba(255, 255, 255, 0.89);
   color: white;
   margin: 100px auto;
   padding: 20px;
   overflow: hidden;
 }
 
-#services .container {
+#gallery .container {
   padding-bottom: 100px;
 }
 
-#services h2 {
+#gallery h2 {
   font-size: 40px;
   text-align: center;
   padding-top: 100px;
   padding-bottom: 70px;
+  color: #000;
 }
 
 .swiper {
@@ -228,7 +279,7 @@ header #mobile_nav {
   object-fit: contain;
 }
 
-#services p {
+#gallery p {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -236,21 +287,14 @@ header #mobile_nav {
   top: 50px;
 }
 
-#services p a {
-  color: white;
-  text-decoration: underline;
-  font-size: 30px;
+#gallery a {
+  color: rgb(0, 0, 0);
+  text-decoration: underline!important;
+  font-size: 22px;
+  font-weight: 500;
 }
 
-/** Testimonials **/
 
-#testimonials {
-  padding: 200px;
-  background: white;
-  color: black;
-  text-align: center;
-  font-size: 25px;
-}
 
 /** Book Now **/
 
@@ -265,6 +309,7 @@ header #mobile_nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  text-decoration: none;
 }
 
 #booknow .content {
@@ -282,17 +327,21 @@ header #mobile_nav {
   transition: all 0.3s ease 0s;
   font-size: 25px;
   margin-top: 20px;
+  text-decoration: none;
 }
 
 #booknow .third-btn {
   margin-left: 30px;
 }
 
-#booknow .content h2 {
+#booknow_h2 {
   font-size: 40px;
+  color: #fff;
+  text-decoration: underline;
 }
 
-#booknow .content p {
+#booknow_p {
+  color: rgb(255, 255, 255);
   font-size: 25px;
   width: 80%;
 }
@@ -386,7 +435,7 @@ footer #footer-mid {
 
 
 /** Responsive Design: Portrait Mode **/
-@media (max-width:1921px) and (min-width:1025px){
+@media (max-width:1921px) and (min-width:1025px) {
 
     header a {
       font-size: 16px;
@@ -469,7 +518,29 @@ footer #footer-mid {
       font-size: 15px;
     }
 
+    #services {
+      padding: 20px;
+      padding-bottom: 80px;
+    }
+ 
     #services h2 {
+      font-size: 25px;
+    }
+
+    .services_circle {
+      max-width: 100%;
+      height: 230px;
+    }
+
+    #services p {
+      font-size: 20px;
+    }
+
+    .services_link {
+      font-size: 20px;
+    }
+
+    #gallery h2 {
       font-size: 25px;
     }
     
@@ -480,7 +551,7 @@ footer #footer-mid {
       object-fit: contain;
     }
     
-    #services p a {
+    #gallery p a {
       font-size: 18px;
     }
 
@@ -639,7 +710,7 @@ footer #footer-mid {
 
   #showcase {
     padding: 0;
-    height: 100vh;
+    height: 65vh;
   }
 
   #showcase .main_container {
@@ -678,7 +749,8 @@ footer #footer-mid {
   #about {
     display: grid;
     padding: 0;
-    margin-top: 50px;
+    padding-bottom: 150px;
+    margin-top: 100px;
   }
 
   #about .container {
@@ -701,10 +773,35 @@ footer #footer-mid {
   #about p {
     position: relative;
     top: 0;
+    font-size: 15px;
+  }
+
+  #services {
+    padding: 10px;
+    padding-bottom: 80px;
+  }
+
+  #services h2 {
+    font-size: 23px;
+  }
+
+  .services_circle {
+    max-width: 100%;
+    height: 150px;
+  }
+
+  #services p {
     font-size: 16px;
   }
+
+  .services_link {
+    font-size: 15px;
+  }
+
+
+
   
-  #services h2 {
+  #gallery h2 {
     font-size: 22px;
   }
   
@@ -715,7 +812,7 @@ footer #footer-mid {
     object-fit: contain;
   }
   
-  #services p a {
+  #gallery p a {
     font-size: 16px;
   }
 
@@ -871,7 +968,7 @@ footer #footer-mid {
 
   #showcase {
     padding: 0;
-    height: 100vh;
+    height: 70vh;
   }
   
   #showcase .main_container img {
@@ -905,6 +1002,7 @@ footer #footer-mid {
 
   #about {
     margin-top: 50px;
+    padding-bottom: 100px;
   }
 
   #about .line {
@@ -925,7 +1023,37 @@ footer #footer-mid {
     font-size: 15px;
   }
 
+  #services {
+    padding-top: 5px;
+    padding-bottom: 60px;
+  }
+
   #services h2 {
+    font-size: 20px;
+  }
+
+  .services_circle_container {
+    display: grid;
+  }
+
+  .services_circle_wrapper {
+    margin-top: 50px;
+  }
+
+  .services_circle {
+    max-width: 100%;
+    height: 200px;
+  }
+
+  #services p {
+    font-size: 16px;
+  }
+
+  .services_link {
+    font-size: 15px;
+  }
+
+  #gallery h2 {
     font-size: 22px;
   }
   
@@ -936,11 +1064,10 @@ footer #footer-mid {
     object-fit: contain;
   }
   
-  #services p a {
+  #gallery p a {
     font-size: 16px;
   }
 
-  
   #testimonials {
     padding: 50px;
     font-size: 20px;
@@ -1086,7 +1213,7 @@ footer #footer-mid {
 
   #showcase {
     padding: 0;
-    min-height: 80vh;
+    height: 60vh;
   }
  
   #showcase .cta_content {
@@ -1122,8 +1249,8 @@ footer #footer-mid {
   }
 
   #about {
-    margin-top: 20px;
-    padding-bottom: 50px;
+    margin-top: 50px;
+    padding-bottom: 130px;
   }
  
   #about .line {
@@ -1145,7 +1272,38 @@ footer #footer-mid {
     line-height: 1.7;
   }
 
+
+  #services {
+    padding-top: 5px;
+    padding-bottom: 60px;
+  }
+
   #services h2 {
+    font-size: 20px;
+  }
+
+  .services_circle_container {
+    display: grid;
+  }
+
+  .services_circle_wrapper {
+    margin-top: 50px;
+  }
+
+  .services_circle {
+    max-width: 100%;
+    height: 200px;
+  }
+
+  #services p {
+    font-size: 16px;
+  }
+
+  .services_link {
+    font-size: 15px;
+  }
+
+  #gallery h2 {
     font-size: 22px;
   }
   
@@ -1156,7 +1314,7 @@ footer #footer-mid {
     object-fit: cover;
   }
   
-  #services p a {
+  #gallery p a {
     font-size: 16px;
   }
 
@@ -1220,15 +1378,20 @@ footer #footer-mid {
 
 /** Responsive Design: Landscape Mode Design **/
 
-@media (max-height:688px) {
+
+
+@media (max-height: 768px) {
   #showcase {
-    height: 150vh;
+    height: 125vh;
+  } 
+  #about {
+    margin-top: -50px;
   }
 }
 
-@media (max-height: 376px) {
+@media (max-height: 548px) {
   #showcase {
-    height: 200vh;
+    height: 140vh;
   }
 
   header #side_menu {
@@ -1238,8 +1401,15 @@ footer #footer-mid {
   
 }
 
-@media (max-height:320px) {
+@media (max-height: 375px) {
+
   #showcase {
-    height: 300vh;
+    height: 206vh;
+  }
+
+  #about {
+    margin-top: 50px;
   }
 }
+
+
