@@ -1298,6 +1298,11 @@ footer #footer-mid {
     font-size: 15px;
   }
 
+  #gallery {
+    padding: 0;
+    margin: 0;
+  }
+
   #gallery h2 {
     font-size: 22px;
   }
@@ -1411,6 +1416,10 @@ footer #footer-mid {
   #showcase {
     height: 95vh;
   } 
+
+  #gallery {
+    margin: 0;
+  }
 }
 
 @media (max-height: 736px) {
