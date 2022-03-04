@@ -1209,6 +1209,10 @@ footer #footer-mid {
   #showcase {
     height: 60vh;
   }
+
+  #showcase .main_container {
+    padding-top: 30px;
+  }
  
   #showcase .cta_content {
     position: relative;
