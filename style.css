@@ -82,7 +82,7 @@ header #mobile_nav {
 
 #showcase {
   padding: 100px;
-  height: 82vh;
+  height: 70vh;
 }
 
 #showcase .main_container {
@@ -155,7 +155,7 @@ header #mobile_nav {
 
 /** About **/
 #about {
-  margin-top: 150px;
+  margin-top: 10px;
   padding-bottom: 200px;
 }
 
@@ -434,7 +434,7 @@ footer #footer-mid {
 
 
 
-/** Responsive Design: Portrait Mode **/
+/** Responsive Design: Width **/
 @media (max-width:1921px) and (min-width:1025px) {
 
     header a {
@@ -452,7 +452,7 @@ footer #footer-mid {
 
     #showcase {
       padding:0;
-      height: 100vh;
+      height: 90vh;
     }
 
     #showcase .main_container img {
@@ -750,7 +750,7 @@ footer #footer-mid {
     display: grid;
     padding: 0;
     padding-bottom: 150px;
-    margin-top: 100px;
+    margin-top: -80px;
   }
 
   #about .container {
@@ -797,9 +797,6 @@ footer #footer-mid {
   .services_link {
     font-size: 15px;
   }
-
-
-
   
   #gallery h2 {
     font-size: 22px;
@@ -815,7 +812,6 @@ footer #footer-mid {
   #gallery p a {
     font-size: 16px;
   }
-
 
   #testimonials {
     padding: 100px;
@@ -1001,7 +997,7 @@ footer #footer-mid {
   }
 
   #about {
-    margin-top: 50px;
+    margin-top: -100px;
     padding-bottom: 100px;
   }
 
@@ -1212,7 +1208,6 @@ footer #footer-mid {
 	}
 
   #showcase {
-    padding: 0;
     height: 60vh;
   }
  
@@ -1249,7 +1244,7 @@ footer #footer-mid {
   }
 
   #about {
-    margin-top: 50px;
+    margin-top: -200px;
     padding-bottom: 130px;
   }
  
@@ -1376,40 +1371,147 @@ footer #footer-mid {
 
 
 
-/** Responsive Design: Landscape Mode Design **/
+/** Responsive Design: Height **/
 
+@media (max-height: 1180px) {
+  #about {
+    margin-top: 50px;
+  }
 
+  #about p, #footer-bottom p, #footer-bottom p a {
+    font-size: 14px;
+  }
+
+}
+
+@media (max-height: 1024px) {
+  #showcase {
+    padding-bottom: 45px;
+  }
+
+  #about p, #footer-bottom p, #footer-bottom p a {
+    font-size: 14px;
+  }
+
+}
+
+@media (max-height: 844px) {
+
+  #showcase {
+    padding-bottom: 150px;
+  }
+
+  #about p, #footer-bottom p, #footer-bottom p a {
+    font-size: 14px;
+  }
+
+}
 
 @media (max-height: 768px) {
   #showcase {
-    height: 125vh;
+    height: 95vh;
   } 
+}
+
+@media (max-height: 736px) {
+  #showcase {
+    height: 170vh;
+  }
+  
   #about {
-    margin-top: -50px;
+    margin-top: 40px;
   }
 }
 
-@media (max-height: 548px) {
+@media (max-height: 667px) {
   #showcase {
-    height: 140vh;
+    padding-bottom: 220px;
+  } 
+}
+
+@media (max-height: 635px) {
+
+  #about {
+    margin-top: -350px;
+  } 
+}
+
+@media (max-height: 568px) {
+
+  #showcase {
+    padding-bottom: 200px;
   }
 
-  header #side_menu {
-		height: 80vh;
-		padding-top: 80px;
-	}
+  #about {
+    margin-top: -20px;
+  }
+
+  #about p, #footer-bottom p, #footer-bottom p a {
+    font-size: 14px;
+  }
+
+}
+
+@media (max-height: 540px) {
+  #showcase {
+    padding-bottom: 50px;
+  } 
+}
+
+@media (max-width: 414px) {
+  #showcase {
+    height: 72vh;
+  }
   
+  #about {
+    margin-top: 40px;
+  }
+}
+
+@media (max-height: 390px) {
+
+  #showcase {
+    padding-bottom: 295px;
+  }
+
+  #about p, #footer-bottom p, #footer-bottom p a {
+    font-size: 14px;
+  }
+
+}
+
+@media (max-height: 393px) {
+
+  #showcase {
+    padding-bottom: 280px;
+  }
+
+  #about p, #footer-bottom p, #footer-bottom p a {
+    font-size: 14px;
+  }
+
 }
 
 @media (max-height: 375px) {
 
   #showcase {
-    height: 206vh;
+    padding-bottom: 200px;
   }
 
-  #about {
-    margin-top: 50px;
+  #about p, #footer-bottom p, #footer-bottom p a {
+    font-size: 14px;
   }
+
 }
 
+@media (max-width: 320px) {
 
+  #showcase {
+    padding-bottom: 250px;
+  }
+
+  #about p, #footer-bottom p, #footer-bottom p a {
+    font-size: 14px;
+  }
+
+}
