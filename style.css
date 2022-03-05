@@ -204,14 +204,15 @@ header #mobile_nav {
   color: rgb(255, 255, 255);
   text-align: center;
   font-size: 30px;
-  padding-bottom: 50px;
+  padding-top: 80px;
+  padding-bottom: 30px;
 }
 
 .services_circle_container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding-bottom: 80px;
+  padding-bottom: 50px;
 }
 
 .services_circle {
@@ -242,7 +243,6 @@ header #mobile_nav {
 
 #gallery {
   position: relative;
-  min-height: 80vh;
   background: rgba(255, 255, 255, 0.89);
   color: white;
   margin: 100px auto;
@@ -257,7 +257,6 @@ header #mobile_nav {
 #gallery h2 {
   font-size: 40px;
   text-align: center;
-  padding-top: 100px;
   padding-bottom: 70px;
   color: #000;
 }
@@ -429,6 +428,25 @@ footer #footer-mid {
 #footer-bottom p {
   color: white;
   font-size: 25px;
+}
+
+
+/** Gallery page **/
+
+.gallery_page_container {
+  margin-top: 50px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery_page_box {
+  width: 600px;
+  height: 600px;
+  margin: 20px;
+  object-fit: cover;
 }
 
 
@@ -614,6 +632,13 @@ footer #footer-mid {
 
     #footer-bottom p {
       font-size: 16px;
+    }
+    
+    .gallery_page_box {
+      width: 400px;
+      height: 400px;
+      margin: 20px;
+      object-fit: cover;
     }
 
 }
@@ -871,6 +896,13 @@ footer #footer-mid {
     font-size: 16px;
   }
 
+  .gallery_page_box {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    object-fit: cover;
+  }
+
 }
 
 @media (max-width: 768px) and (min-width:476px) {
@@ -1116,6 +1148,14 @@ footer #footer-mid {
     width: 300px;
     height: 350px;
   }
+
+  .gallery_page_box {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    object-fit: cover;
+  }
+
 
 }
 
@@ -1374,6 +1414,14 @@ footer #footer-mid {
     width: 300px;
     height: 300px;
   }
+
+  .gallery_page_box {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    object-fit: cover;
+  }
+
 
 }
 
