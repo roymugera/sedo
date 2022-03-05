@@ -251,6 +251,7 @@ header #mobile_nav {
 }
 
 #gallery .container {
+  padding-top: 70px;
   padding-bottom: 100px;
 }
 
@@ -1561,6 +1562,11 @@ footer #footer-mid {
   #about p, #footer-bottom p, #footer-bottom p a {
     font-size: 14px;
   }
+
+  header #side_menu {
+		height: 69vh;
+    padding-bottom: 100px;
+	}
 
 }
 
