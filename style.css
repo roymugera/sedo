@@ -441,7 +441,6 @@ footer #footer-mid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 220px;
 }
 
 
@@ -456,7 +455,7 @@ footer #footer-mid {
 
 /** Responsive Design: Width **/
 @media (max-width:1921px) and (min-width:1025px) {
-
+    
     header a {
       font-size: 16px;
     }
@@ -648,13 +647,6 @@ footer #footer-mid {
 
 @media (max-width:1024px) and (min-width: 769px) {
 
-  header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-  }
-  
   header #mobile_ul {
     display: none;
     float: none;
@@ -694,7 +686,6 @@ footer #footer-mid {
 		transition: 0.3s;
 	}
 
-
   header #branding img {
     width: 185px;
     height: 185px;
@@ -716,8 +707,7 @@ footer #footer-mid {
 	}
 
   #showcase {
-    height: 82vh;
-    margin-top: 195px;
+    height: 85vh;
   }
 
   #showcase .main_container {
@@ -890,13 +880,6 @@ footer #footer-mid {
 
 @media (max-width: 768px) and (min-width:476px) {
 
-  header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-  }
-
   header #mobile_ul {
     display: none;
     float: none;
@@ -957,7 +940,7 @@ footer #footer-mid {
 
   #showcase {
     height: 82vh;
-    margin-top: 200px;
+ 
   }
   
   #showcase .main_container img {
@@ -1124,10 +1107,7 @@ footer #footer-mid {
 @media (max-width: 475px) and (min-width:320px) {
 
   header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
+    height: 150px;
   }
 
   header #mobile_ul {
@@ -1191,7 +1171,6 @@ footer #footer-mid {
   
   #showcase {
     height: 70vh;
-    margin-top: 200px;
   }
 
   #showcase .main_container {
@@ -1499,6 +1478,10 @@ footer #footer-mid {
 
 @media (max-height: 375px) {
 
+  header {
+    height: 160px;
+  }
+
   #showcase {
     padding-bottom: 200px;
   }
@@ -1512,13 +1495,12 @@ footer #footer-mid {
     padding-bottom: 100px;
 	}
 
-  
-.gallery_page_box {
-  width: 225px;
-  height: 225px;
-  margin: 20px;
-  object-fit: cover;
-}
+  .gallery_page_box {
+    width: 225px;
+    height: 225px;
+    margin: 20px;
+    object-fit: cover;
+  }
 
 
   
